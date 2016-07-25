@@ -16,6 +16,8 @@ const names = [ "Andy Mention",
                 "Tim Proctor",
                 "Will Faurot" ]
 
+// Build out a class to contain methods for list . . .
+
 const printNames = (names) => {
   names.map((name) => {
     return (
@@ -58,7 +60,7 @@ const search = (searchName) => {
   const filtered = names.filter((name) => {
     return name.toLowerCase().includes(searchName.toLowerCase());
   });
-  return filtered
+  return filtered;
 };
 
 $(document).ready(() => {
